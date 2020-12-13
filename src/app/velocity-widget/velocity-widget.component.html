@@ -1,0 +1,13 @@
+<div>
+    <div *ngIf="isRefreshing" class="spinner-border text-primary loader" role="status">
+    </div>
+    
+    <div [class.content-loading]='isRefreshing'>
+        <h1 class="text-center">🏃‍♂️</h1>
+        <h5>Last Sprint</h5>
+        <section>
+            <div>Planned: 25</div>
+            <div>Achieved: 20</div>
+        </section>
+    </div>
+</div>

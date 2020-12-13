@@ -1,0 +1,13 @@
+<div>
+    <div *ngIf="isRefreshing" class="spinner-border text-primary loader" role="status">
+    </div>
+    
+    <div [class.content-loading]='isRefreshing'>
+        <h1 class="text-center">🌤</h1>
+        <h5>Weather</h5>
+        <section>
+            <div>Top: 11 deg</div>
+            <div>Maximum: 22 deg</div>
+        </section>
+    </div>
+</div>
