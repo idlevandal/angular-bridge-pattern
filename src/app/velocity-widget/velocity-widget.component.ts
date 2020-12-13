@@ -14,6 +14,7 @@ import { WIDGET } from '../widget.token';
 export class VelocityWidgetComponent implements OnInit, Widget {
 
   public isRefreshing: boolean = false;
+  public title: string = 'Sprint';
 
   constructor() { }
 

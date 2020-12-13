@@ -11,10 +11,13 @@ export class WidgetWrapperComponent implements OnInit {
   @ContentChild(WIDGET, {static: true})
   widget: Widget;
 
+  public title: string;
+
   constructor() { }
 
   ngOnInit(): void {
-    this.widget.load()
+    this.title = this.widget.title;
+    this.widget.load();
   }
 
   public onRefresh(): void {

@@ -14,6 +14,8 @@ import { WIDGET } from '../widget.token';
 export class WeatherWidgetComponent implements OnInit, Widget {
 
   public isRefreshing: boolean = false;
+  public title: string = 'Weather';
+
   constructor() { }
 
   ngOnInit(): void {
