@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
 import { VelocityWidgetComponent } from './velocity-widget/velocity-widget.component';
 import { WidgetWrapperComponent } from './widget-wrapper/widget-wrapper.component';
+import { MusicWidgetComponent } from './music-widget/music-widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherWidgetComponent,
     VelocityWidgetComponent,
-    WidgetWrapperComponent
+    WidgetWrapperComponent,
+    MusicWidgetComponent
   ],
   imports: [
     BrowserModule,
