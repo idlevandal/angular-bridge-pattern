@@ -11,19 +11,13 @@ import { WIDGET } from '../widget.token';
     useExisting: VelocityWidgetComponent
   }]
 })
-export class VelocityWidgetComponent implements OnInit, Widget {
+export class VelocityWidgetComponent implements Widget {
 
   public isRefreshing: boolean = false;
   public title: string = 'Sprint';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
   public load(): void {
     console.log('Load data from JIRA API...');
-    
   }
 
   public refresh(): void {

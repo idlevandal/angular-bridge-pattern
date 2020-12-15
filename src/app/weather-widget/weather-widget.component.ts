@@ -11,15 +11,10 @@ import { WIDGET } from '../widget.token';
     useExisting: WeatherWidgetComponent
   }]
 })
-export class WeatherWidgetComponent implements OnInit, Widget {
+export class WeatherWidgetComponent implements Widget {
 
   public isRefreshing: boolean = false;
   public title: string = 'Weather';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public load(): void {
     console.log('Load data from WEATHER API...');

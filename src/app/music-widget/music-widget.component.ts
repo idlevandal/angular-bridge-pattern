@@ -11,15 +11,10 @@ import { WIDGET } from '../widget.token';
     useExisting: MusicWidgetComponent
   }]
 })
-export class MusicWidgetComponent implements OnInit, Widget {
+export class MusicWidgetComponent implements Widget {
 
   public isRefreshing: boolean = false;
   public title: string = 'Music';
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public load() {
     console.log('Load data from MUSIC API...');
